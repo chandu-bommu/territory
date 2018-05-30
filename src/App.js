@@ -13,25 +13,13 @@ class App extends Component {
           <h1 className="App-title">Territories</h1>
         </header>
         <Dropdown
-          placeHolder='Select an Option'
+          placeHolder='Select a Country'
           label='Basic uncontrolled example:'
           id='Basicdrop1'
           ariaLabel='Basic dropdown example'
           options={
             [
-              { key: 'Header', text: 'Actions', itemType: DropdownMenuItemType.Header },
-              { key: 'A', text: 'Option a' },
-              { key: 'B', text: 'Option b' },
-              { key: 'C', text: 'Option c', disabled: true },
-              { key: 'D', text: 'Option d' },
-              { key: 'E', text: 'Option e' },
-              { key: 'divider_2', text: '-', itemType: DropdownMenuItemType.Divider },
-              { key: 'Header2', text: 'People', itemType: DropdownMenuItemType.Header },
-              { key: 'F', text: 'Option f' },
-              { key: 'G', text: 'Option g' },
-              { key: 'H', text: 'Option h' },
-              { key: 'I', text: 'Option i' },
-              { key: 'J', text: 'Option j' },
+              { key: 'A', text: 'Option a' }
             ]
           }
           componentRef={ this._basicDropdown }
