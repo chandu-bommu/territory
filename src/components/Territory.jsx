@@ -33,19 +33,19 @@ class Territory extends Component{
             <tbody>
               <tr>
                 <td>
-                  <Dropdown placeHolder='Select a Country' label='COUNTRY' id='countryDrop'
+                  <Dropdown placeHolder='Select a Country' label='Select COUNTRY' id='countryDrop'
                     options={this.state.countries}
                     onChanged={ this.onChangeCountry }
                   />
                 </td>
                 <td>
-                  <Dropdown placeHolder='Select a State' label='STATE' id='stateDrop'
+                  <Dropdown placeHolder='Select a State' label='Select STATE' id='stateDrop'
                     options={ this.state.states }
                     onChanged={ this.onChangeState }
                   />
                 </td>
                 <td>
-                  <Dropdown placeHolder='Select a City' label='CITY' id='cityDrop'
+                  <Dropdown placeHolder='Select a City' label='Select CITY' id='cityDrop'
                     options={ this.state.cities }
                     onChanged={ this.onChangeCity }
                   />
@@ -53,7 +53,7 @@ class Territory extends Component{
                 <td>
                   <Dropdown
                     placeHolder='Select Areas'
-                    label='AREAS'
+                    label='Select AREAS'
                     selectedKeys={ selectedItems }
                     onChanged={ this.onChangeMultiSelect }
                     onFocus={ this.log('onFocus called') }
@@ -73,6 +73,26 @@ class Territory extends Component{
                 <td>
                     <DefaultButton data-automation-id='resetButton' text='Reset' onClick={this.resetForm}/>
                 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="countryTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Areas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{this.state.selectedCountry}</td>
+                <td>{this.state.selectedState}</td>
+                <td>{this.state.selectedCity}</td>
+                <td>{this.state.selectedItems.join(', ')}</td>
               </tr>
             </tbody>
           </table>
@@ -103,7 +123,7 @@ class Territory extends Component{
   }
 
   addToTable = () => {
-    console.log(this.state.selectedCountry);
+    console.log(this.state.selectedCountry,this.state.selectedState,this.state.selectedCity,this.state.selectedItems);
   }
 
   clearTable = () => {
