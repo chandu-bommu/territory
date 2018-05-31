@@ -4,7 +4,7 @@ import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
 import { TextField } from 'office-ui-fabric-react/lib/TextField';
 
 
-class UserDetails extends React.Component{
+class UserDetails extends Component{
 
   constructor(props) {
     super(props);

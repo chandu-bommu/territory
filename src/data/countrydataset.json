@@ -1,0 +1,133 @@
+{
+  "countries": [{
+      "country": "Argentina",
+      "states": [{
+        "state": "Buenos Aires",
+        "cities": [{
+            "city": "La Plata",
+            "areas": ["Waldorf", "Cobb Island"]
+          },
+          {
+            "city": "Merlo",
+            "areas": ["Avenida del Libertador San Martín", "Benoit"]
+          }
+        ]
+      }, {
+        "state": "Santa Cruz",
+        "cities": [{
+            "city": "Río Gallegos",
+            "areas": ["Laguna Azul", "Plaza San Martin"]
+          },
+          {
+            "city": "Puerto San Julián",
+            "areas": ["Pje. Albatros", "Urquiza"]
+          }
+        ]
+      }]
+    },
+    {
+      "country": "Belgium",
+      "states": [{
+        "state": "Antwerp",
+        "cities": [{
+            "city": "Antwerp",
+            "areas": ["Merksem", "Kwade Velden"]
+          },
+          {
+            "city": "Hoogstraten",
+            "areas": ["Beek", "Meer"]
+          }
+        ]
+      }, {
+        "state": "Luxembourg",
+        "cities": [{
+            "city": "Arlon",
+            "areas": ["Autelhaut", "Clairefontaine"]
+          },
+          {
+            "city": "Bertrix",
+            "areas": ["Acremont", "Assenois"]
+          }
+        ]
+      }]
+    },
+    {
+      "country": "Germany",
+      "states": [{
+        "state": "Berlin",
+        "cities": [{
+            "city": "Beirlín",
+            "areas": ["Merksem", "Kwade Velden"]
+          },
+          {
+            "city": "Lichterfelde",
+            "areas": ["Steinäckerstraße", "Weddigenweg"]
+          }
+        ]
+      }, {
+        "state": "Hamburg",
+        "cities": [{
+            "city": "Wismar Hanseatic City",
+            "areas": ["Am Wallensteingraben", "Rabenhof"]
+          },
+          {
+            "city": "Lueneburg Hanseatic City",
+            "areas": ["St.-Ursula-Weg", "Volgerstraße"]
+          }
+        ]
+      }]
+    },
+    {
+      "country": "India",
+      "states": [{
+        "state": "Andhra Pradesh",
+        "cities": [{
+            "city": "Anantapur",
+            "areas": ["Ramachandra Nagar", "Thpovanam"]
+          },
+          {
+            "city": "Visakhapatnam",
+            "areas": ["Gajuwaka", "Madhurawada"]
+          }
+        ]
+      }, {
+        "state": "Karnataka",
+        "cities": [{
+            "city": "Bangalore",
+            "areas": ["Bellandur", "HSR Layout"]
+          },
+          {
+            "city": "Mysore",
+            "areas": ["Gokulam", "Kesare"]
+          }
+        ]
+      }]
+    },
+    {
+      "country": "United States",
+      "states": [{
+        "state": "California",
+        "cities": [{
+            "city": "Los Angeles",
+            "areas": ["Antelope Valley", "Eastside"]
+          },
+          {
+            "city": "San Diego",
+            "areas": ["South Park", "San Marcos"]
+          }
+        ]
+      }, {
+        "state": "Washington",
+        "cities": [{
+            "city": "Seattle",
+            "areas": ["Belltown", "Ballard"]
+          },
+          {
+            "city": "Tacoma",
+            "areas": ["Downtown", "Old Town"]
+          }
+        ]
+      }]
+    }
+  ]
+}

@@ -8,18 +8,21 @@
 
 .App-header {
   background-color: #0078d4;
-  height: 150px;
+  height: 80px;
   padding: 20px;
   color: white;
+  background-image: url("../assets/header-background.jpg");
+  background-size: 450px 350px;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 1.0em;
+  vertical-align: middle;
 }
 
 .App-intro {
   font-size: large;
-  padding-left: 5%;
+  padding-left: 30%;
 }
 
 @keyframes App-logo-spin {
