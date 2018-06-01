@@ -12,7 +12,7 @@
   padding: 20px;
   color: white;
   background-image: url("../assets/header-background.jpg");
-  background-size: 450px 350px;
+  background-size: 470px 370px;
 }
 
 .App-title {
@@ -20,7 +20,7 @@
   vertical-align: middle;
 }
 
-.App-intro {
+.appComponent {
   font-size: large;
   align-content: center;
   max-width: 50%;
@@ -28,43 +28,64 @@
 
 .countryTable {
   padding-top: 30px;
-  max-width: 100%;
 }
 
 .countryForm {
   padding-top: 3%;
 }
 
-.userForm {
-  max-width: 50%;
-}
-
-.resetButton {
-  padding-top: 5%;
-  padding-left: 2%;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userDetails {
+  padding-top: 50px;
 }
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 200%;
 }
 
-th {
+#addButton, #clearButton {
+  margin: 20px 2px 2px 2px !important;
+}
+
+.countryTable th {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
+  background-color: #0078d4;
+  color: #FFF;
 }
 
-tr:nth-child(even) {
+.countryTable tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.userImage {
+  background: #cbe5ff;
+  box-shadow: 2px 2px 4px 4px lightgrey;
+  width: 360px;
+  height: 200px;
+}
+
+.userInfo {
+  background: #FFF;
+  box-shadow: 2px 2px 4px 4px lightgrey;
+  width: 360px;
+  height: 50px;
+}
+
+.userCard {
+  padding-top: 5px;
+}
+
+#idSpan {
+  padding-right: 70px; 
+}
+
+.contentDiv {
+    width: 50%; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 }

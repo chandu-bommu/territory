@@ -26,25 +26,34 @@ class Territory extends Component{
   render = () => {
     const { selectedItem, selectedAreas, selectedCountry, selectedState, selectedCity } = this.state;
     return (
-      <div className="App-intro">
+      <div className="appComponent">
         <div className="countryForm">
           <table>
+            <thead>
+              <tr>
+                <th>COUNTRY</th>
+                <th>STATE</th>
+                <th>CITY</th>
+                <th>AREAS</th>
+                <th></th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
                 <td>
-                  <Dropdown placeHolder='Select a Country' label='Select COUNTRY' id='countryDrop'
+                  <Dropdown placeHolder='Select a Country' id='countryDrop'
                     options={this.state.countries}
                     onChanged={ this.onChangeCountry }
                   />
                 </td>
                 <td>
-                  <Dropdown placeHolder='Select a State' label='Select STATE' id='stateDrop'
+                  <Dropdown placeHolder='Select a State' id='stateDrop'
                     options={ this.state.states }
                     onChanged={ this.onChangeState }
                   />
                 </td>
                 <td>
-                  <Dropdown placeHolder='Select a City' label='Select CITY' id='cityDrop'
+                  <Dropdown placeHolder='Select a City' id='cityDrop'
                     options={ this.state.cities }
                     onChanged={ this.onChangeCity }
                   />
@@ -52,30 +61,19 @@ class Territory extends Component{
                 <td>
                   <Dropdown
                     placeHolder='Select Areas'
-                    label='Select AREAS'
                     onChanged={ this.onChangeMultiSelect }
-                    onFocus={ this.log('onFocus called') }
-                    onBlur={ this.log('onBlur called') }
                     multiSelect
                     options={ this.state.areas }
                   />
                 </td>
-                <td className="resetButton">
+                <td>
                     <DefaultButton data-automation-id='resetButton' text='Reset' onClick={this.resetForm}/>
                 </td>
               </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                    <PrimaryButton data-automation-id='addToTableButton' text='Add to Table' onClick={this.addToTable}/>
-                </td>
-                <td>
-                    <PrimaryButton data-automation-id='clearTableButton' text='Clear Table' onClick={this.clearTable}/>
+                <td colSpan="5" style={{textAlign: 'right'}}>
+                    <PrimaryButton id="addButton" data-automation-id='addToTableButton' text='Add to Table' onClick={this.addToTable}/>
+                    <PrimaryButton id="clearButton" data-automation-id='clearTableButton' text='Clear Table' onClick={this.clearTable}/>
                 </td>
               </tr>
             </tbody>
@@ -101,6 +99,7 @@ class Territory extends Component{
   }
 
   addToTable = () => {
+    if(this.state.selectedAreas && this.state.selectedAreas.length > 0) {
       this.state.rows.push(
         <tr>
           <td>{this.state.selectedCountry}</td>
@@ -110,24 +109,27 @@ class Territory extends Component{
         </tr>
       );
       this.setState({count: this.state.count+1});
+    } else {
+      alert('Please select  "Country > State > City > Areas"  to add to table');
+    }
   }
 
   onChangeCountry = (e) => {
-    this.setState({states: [], cities: [], areas: []});
+    this.setState({selectedState: "", selectedCity: "", selectedAreas: [], states: [], cities: [], areas: []});
     if(e.key) {
       this.getStatesOfCountry(e.key);
     }
   }
 
   onChangeState = (e) => {
-    this.setState({cities: [], areas: []});
+    this.setState({selectedCity: "", selectedAreas: [], cities: [], areas: []});
     if(e.key) {
       this.getCitiesOfState(e.key);
     }
   }
 
   onChangeCity = (e) => {
-    this.setState({areas: []});
+    this.setState({selectedAreas: [], areas: []});
     if(e.key) {
       this.getAreasOfCity(e.key);
     }
@@ -138,7 +140,17 @@ class Territory extends Component{
   }
 
   resetForm = () => {
-    this.setState({states: [], cities: [], areas: []});
+    this.setState(
+      {
+        selectedCountry: "",
+        selectedState: "",
+        selectedCity: "",
+        selectedAreas: [],
+        states: [],
+        cities: [],
+        areas: []
+      }
+    );
   }
 
   componentDidMount = () => {
@@ -205,11 +217,6 @@ class Territory extends Component{
     });
   }
 
-  changeState = (item: IDropdownOption): void => {
-    console.log('here is the things updating...' + item.key + ' ' + item.text + ' ' + item.selected);
-    this.setState({ selectedItem: item });
-  }
-
   onChangeMultiSelect = (item: IDropdownOption): void => {
     const updatedSelectedItem = this.state.selectedAreas ? this.copyArray(this.state.selectedAreas) : [];
     if (item.selected) {
@@ -235,11 +242,6 @@ class Territory extends Component{
     return newArray;
   }
 
-  log(str: string): () => void {
-    return (): void => {
-      console.log(str);
-    };
-  }
 }
 
 export default Territory;
