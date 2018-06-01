@@ -22,6 +22,7 @@ class UserDetails extends Component{
     return (
       <div className="appComponent">
         <div className="userDetails">
+          <div className="header">User Details</div>
           <table>
             <tbody>
               <tr>

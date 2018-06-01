@@ -1,89 +1,96 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 100px;
+    height: 100px;
 }
 
 .App-header {
-  background-color: #0078d4;
-  height: 80px;
-  padding: 20px;
-  color: white;
-  background-image: url("../assets/header-background.jpg");
-  background-size: 470px 370px;
+    background-color: #0078d4;
+    height: 80px;
+    padding: 20px;
+    color: white;
+    background-image: url("../assets/header-background.jpg");
+    background-size: 470px 370px;
 }
 
 .App-title {
-  font-size: 1.0em;
-  vertical-align: middle;
+    font-size: 1.0em;
+    vertical-align: middle;
 }
 
 .appComponent {
-  font-size: large;
-  align-content: center;
-  max-width: 50%;
+    font-size: large;
+    align-content: center;
+    max-width: 50%;
 }
 
 .countryTable {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 
 .countryForm {
-  padding-top: 3%;
+    padding-top: 3%;
 }
 
 .userDetails {
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 200%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 200%;
 }
 
-#addButton, #clearButton {
-  margin: 20px 2px 2px 2px !important;
+#addButton,
+#clearButton {
+    margin: 20px 2px 2px 2px !important;
 }
 
 .countryTable th {
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-  background-color: #0078d4;
-  color: #FFF;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: #0078d4;
+    color: #FFF;
 }
 
 .countryTable tr:nth-child(even) {
-  background-color: #dddddd;
+    background-color: #dddddd;
 }
 
 .userImage {
-  background: #cbe5ff;
-  box-shadow: 2px 2px 4px 4px lightgrey;
-  width: 360px;
-  height: 200px;
+    background: #cbe5ff;
+    box-shadow: 2px 2px 4px 4px lightgrey;
+    width: 360px;
+    height: 200px;
 }
 
 .userInfo {
-  background: #FFF;
-  box-shadow: 2px 2px 4px 4px lightgrey;
-  width: 360px;
-  height: 50px;
+    background: #FFF;
+    box-shadow: 2px 2px 4px 4px lightgrey;
+    width: 360px;
+    height: 50px;
 }
 
 .userCard {
-  padding-top: 5px;
+    padding-top: 5px;
 }
 
 #idSpan {
-  padding-right: 70px; 
+    padding-right: 70px;
+}
+
+.header {
+    width: 200%;
+    padding-bottom: 10px;
+    font-size: 24px;
 }
 
 .contentDiv {
-    width: 50%; /*can be in percentage also.*/
+    width: 50%;
     height: auto;
     margin: 0 auto;
     padding: 10px;
