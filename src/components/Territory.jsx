@@ -11,24 +11,23 @@ class Territory extends Component{
     super(props);
     this.state = {
       selectedItem: undefined,
-      selectedItems: [],
+      selectedAreas: [],
       countries: [],
       states: [],
       cities: [],
       selectedCountry: "",
       selectedState: "",
-      selectedCity: ""
+      selectedCity: "",
+      rows: [],
+      count: 0
     };
   }
 
-  componentWillMount = () => {
-  }
-
   render = () => {
-    const { selectedItem, selectedItems, selectedCountry, selectedState, selectedCity } = this.state;
+    const { selectedItem, selectedAreas, selectedCountry, selectedState, selectedCity } = this.state;
     return (
       <div className="App-intro">
-        <div className="form">
+        <div className="countryForm">
           <table>
             <tbody>
               <tr>
@@ -54,7 +53,6 @@ class Territory extends Component{
                   <Dropdown
                     placeHolder='Select Areas'
                     label='Select AREAS'
-                    selectedKeys={ selectedItems }
                     onChanged={ this.onChangeMultiSelect }
                     onFocus={ this.log('onFocus called') }
                     onBlur={ this.log('onBlur called') }
@@ -62,16 +60,22 @@ class Territory extends Component{
                     options={ this.state.areas }
                   />
                 </td>
+                <td className="resetButton">
+                    <DefaultButton data-automation-id='resetButton' text='Reset' onClick={this.resetForm}/>
+                </td>
               </tr>
               <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
                 <td>
                     <PrimaryButton data-automation-id='addToTableButton' text='Add to Table' onClick={this.addToTable}/>
                 </td>
                 <td>
                     <PrimaryButton data-automation-id='clearTableButton' text='Clear Table' onClick={this.clearTable}/>
-                </td>
-                <td>
-                    <DefaultButton data-automation-id='resetButton' text='Reset' onClick={this.resetForm}/>
                 </td>
               </tr>
             </tbody>
@@ -88,17 +92,24 @@ class Territory extends Component{
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>{this.state.selectedCountry}</td>
-                <td>{this.state.selectedState}</td>
-                <td>{this.state.selectedCity}</td>
-                <td>{this.state.selectedItems.join(', ')}</td>
-              </tr>
+              { this.state.rows }
             </tbody>
           </table>
         </div>
       </div>
     );
+  }
+
+  addToTable = () => {
+      this.state.rows.push(
+        <tr>
+          <td>{this.state.selectedCountry}</td>
+          <td>{this.state.selectedState}</td>
+          <td>{this.state.selectedCity}</td>
+          <td>{this.state.selectedAreas}</td>
+        </tr>
+      );
+      this.setState({count: this.state.count+1});
   }
 
   onChangeCountry = (e) => {
@@ -122,12 +133,8 @@ class Territory extends Component{
     }
   }
 
-  addToTable = () => {
-    console.log(this.state.selectedCountry,this.state.selectedState,this.state.selectedCity,this.state.selectedItems);
-  }
-
   clearTable = () => {
-    console.log("clearTable");
+    this.setState({rows: []});
   }
 
   resetForm = () => {
@@ -204,7 +211,7 @@ class Territory extends Component{
   }
 
   onChangeMultiSelect = (item: IDropdownOption): void => {
-    const updatedSelectedItem = this.state.selectedItems ? this.copyArray(this.state.selectedItems) : [];
+    const updatedSelectedItem = this.state.selectedAreas ? this.copyArray(this.state.selectedAreas) : [];
     if (item.selected) {
       // add the option if it's checked
       updatedSelectedItem.push(item.key);
@@ -216,7 +223,7 @@ class Territory extends Component{
       }
     }
     this.setState({
-      selectedItems: updatedSelectedItem
+      selectedAreas: updatedSelectedItem
     });
   }
 

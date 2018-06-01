@@ -22,26 +22,49 @@
 
 .App-intro {
   font-size: large;
+  align-content: center;
+  max-width: 50%;
+}
 
+.countryTable {
+  padding-top: 30px;
+  max-width: 100%;
+}
+
+.countryForm {
+  padding-top: 3%;
+}
+
+.userForm {
+  max-width: 50%;
+}
+
+.resetButton {
+  padding-top: 5%;
+  padding-left: 2%;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+  background-color: #dddddd;
 }
