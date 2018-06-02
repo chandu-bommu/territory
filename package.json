@@ -6,7 +6,11 @@
     "office-ui-fabric-react": "^5.111.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "enzyme": "^2.9.1",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "babel-jest": "^21.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

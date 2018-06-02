@@ -27,7 +27,7 @@ class UserDetails extends Component{
             <tbody>
               <tr>
                 <td style={{width: '360px'}}>
-                  <TextField id="userId" label='User ID'
+                  <TextField id="userId" label='Enter User ID'
                         value={ this.state.value }  onChanged={ this._onChanged } placeholder='Enter UserID'/>    
                 </td>
                 <td style={{paddingTop: '30px'}}>
@@ -86,6 +86,7 @@ class UserDetails extends Component{
 
     } else {
       alert("Please enter a valid UserID in a number format");
+      this.setState({display: "none"});
     }
   }
 }
