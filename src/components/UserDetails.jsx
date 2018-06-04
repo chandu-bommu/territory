@@ -28,7 +28,7 @@ class UserDetails extends Component{
               <tr>
                 <td style={{width: '360px'}}>
                   <TextField id="userId" label='Enter User ID'
-                        value={ this.state.value }  onChanged={ this._onChanged } placeholder='Enter UserID'/>    
+                        value={ this.state.value }  onChanged={ this._onChanged } placeholder='Enter UserID'/>
                 </td>
                 <td style={{paddingTop: '30px'}}>
                   <PrimaryButton data-automation-id='getDetailsButton' text='Get Details' onClick={ this.getUserDetails }/>
@@ -76,7 +76,7 @@ class UserDetails extends Component{
               userIdNumber: resdata.data.id,
               userName: `${resdata.data.first_name} ${resdata.data.last_name}`,
               imgSrc: resdata.data.avatar,
-              display: "block"         
+              display: "block"
             });
           })
           .catch( () => {

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="App"
+  >
+    <header
+      className="App-header"
+    />
+    <div
+      className="contentDiv"
+    >
+      <Territory />
+      <UserDetails />
+    </div>
+  </div>,
+  "nodes": Array [
+    <div
+      className="App"
+    >
+      <header
+        className="App-header"
+      />
+      <div
+        className="contentDiv"
+      >
+        <Territory />
+        <UserDetails />
+      </div>
+    </div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <App />,
+    "_forcedUpdate": false,
+    "_instance": App {
+      "context": Object {},
+      "props": Object {},
+      "refs": Object {},
+      "state": null,
+      "updater": Updater {
+        "_callbacks": Array [],
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <div
+      className="App"
+    >
+      <header
+        className="App-header"
+      />
+      <div
+        className="contentDiv"
+      >
+        <Territory />
+        <UserDetails />
+      </div>
+    </div>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_callbacks": Array [],
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <App />,
+}
+`;
