@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserDetails renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="appComponent"
+  >
+    <div
+      className="userDetails"
+    >
+      <div
+        className="header"
+      >
+        User Details
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td
+              style={
+                Object {
+                  "width": "360px",
+                }
+              }
+            >
+              <TextField
+                autoAdjustHeight={false}
+                borderless={false}
+                deferredValidationTime={200}
+                errorMessage=""
+                id="userId"
+                label="Enter User ID"
+                multiline={false}
+                onBeforeChange={[Function]}
+                onChanged={[Function]}
+                onGetErrorMessage={[Function]}
+                onNotifyValidationResult={[Function]}
+                placeholder="Enter UserID"
+                resizable={true}
+                underlined={false}
+                validateOnFocusIn={false}
+                validateOnFocusOut={false}
+                validateOnLoad={true}
+                value={undefined}
+              />
+            </td>
+            <td
+              style={
+                Object {
+                  "paddingTop": "30px",
+                }
+              }
+            >
+              <CustomizedPrimaryButton
+                data-automation-id="getDetailsButton"
+                onClick={[Function]}
+                text="Get Details"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className="userCard"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        <div
+          className="userImage"
+        >
+          <img
+            alt="avtar"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            width="190"
+          />
+        </div>
+        <div
+          className="userInfo"
+        >
+          <span
+            id="idSpan"
+          >
+            ID: 
+            
+          </span>
+          <span
+            id="nameSpan"
+          >
+            Name: 
+            
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "nodes": Array [
+    <div
+      className="appComponent"
+    >
+      <div
+        className="userDetails"
+      >
+        <div
+          className="header"
+        >
+          User Details
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td
+                style={
+                  Object {
+                    "width": "360px",
+                  }
+                }
+              >
+                <TextField
+                  autoAdjustHeight={false}
+                  borderless={false}
+                  deferredValidationTime={200}
+                  errorMessage=""
+                  id="userId"
+                  label="Enter User ID"
+                  multiline={false}
+                  onBeforeChange={[Function]}
+                  onChanged={[Function]}
+                  onGetErrorMessage={[Function]}
+                  onNotifyValidationResult={[Function]}
+                  placeholder="Enter UserID"
+                  resizable={true}
+                  underlined={false}
+                  validateOnFocusIn={false}
+                  validateOnFocusOut={false}
+                  validateOnLoad={true}
+                  value={undefined}
+                />
+              </td>
+              <td
+                style={
+                  Object {
+                    "paddingTop": "30px",
+                  }
+                }
+              >
+                <CustomizedPrimaryButton
+                  data-automation-id="getDetailsButton"
+                  onClick={[Function]}
+                  text="Get Details"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div
+          className="userCard"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          <div
+            className="userImage"
+          >
+            <img
+              alt="avtar"
+              src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+              width="190"
+            />
+          </div>
+          <div
+            className="userInfo"
+          >
+            <span
+              id="idSpan"
+            >
+              ID: 
+              
+            </span>
+            <span
+              id="nameSpan"
+            >
+              Name: 
+              
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <UserDetails />,
+    "_forcedUpdate": false,
+    "_instance": UserDetails {
+      "_onChanged": [Function],
+      "context": Object {},
+      "getUserDetails": [Function],
+      "props": Object {},
+      "refs": Object {},
+      "render": [Function],
+      "state": Object {
+        "display": "none",
+        "imgSrc": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+        "infoStatus": "",
+        "userIdNumber": "",
+        "userName": "",
+        "value": undefined,
+      },
+      "updater": Updater {
+        "_callbacks": Array [],
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <div
+      className="appComponent"
+    >
+      <div
+        className="userDetails"
+      >
+        <div
+          className="header"
+        >
+          User Details
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td
+                style={
+                  Object {
+                    "width": "360px",
+                  }
+                }
+              >
+                <TextField
+                  autoAdjustHeight={false}
+                  borderless={false}
+                  deferredValidationTime={200}
+                  errorMessage=""
+                  id="userId"
+                  label="Enter User ID"
+                  multiline={false}
+                  onBeforeChange={[Function]}
+                  onChanged={[Function]}
+                  onGetErrorMessage={[Function]}
+                  onNotifyValidationResult={[Function]}
+                  placeholder="Enter UserID"
+                  resizable={true}
+                  underlined={false}
+                  validateOnFocusIn={false}
+                  validateOnFocusOut={false}
+                  validateOnLoad={true}
+                  value={undefined}
+                />
+              </td>
+              <td
+                style={
+                  Object {
+                    "paddingTop": "30px",
+                  }
+                }
+              >
+                <CustomizedPrimaryButton
+                  data-automation-id="getDetailsButton"
+                  onClick={[Function]}
+                  text="Get Details"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div
+          className="userCard"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          <div
+            className="userImage"
+          >
+            <img
+              alt="avtar"
+              src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+              width="190"
+            />
+          </div>
+          <div
+            className="userInfo"
+          >
+            <span
+              id="idSpan"
+            >
+              ID: 
+              
+            </span>
+            <span
+              id="nameSpan"
+            >
+              Name: 
+              
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_callbacks": Array [],
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <UserDetails />,
+}
+`;

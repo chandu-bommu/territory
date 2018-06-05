@@ -105,7 +105,7 @@ class Territory extends Component{
           <td>{this.state.selectedCountry}</td>
           <td>{this.state.selectedState}</td>
           <td>{this.state.selectedCity}</td>
-          <td>{this.state.selectedAreas}</td>
+          <td>{this.state.selectedAreas.join(', ')}</td>
         </tr>
       );
       this.setState({count: this.state.count+1});
@@ -141,16 +141,20 @@ class Territory extends Component{
 
   resetForm = () => {
     this.setState(
-      {
-        selectedCountry: "",
-        selectedState: "",
-        selectedCity: "",
-        selectedAreas: [],
-        states: [],
-        cities: [],
-        areas: []
-      }
-    );
+    {
+      selectedItem: undefined,
+      selectedAreas: [],
+      countries: [],
+      states: [],
+      cities: [],
+      selectedCountry: "",
+      selectedState: "",
+      selectedCity: "",
+      rows: [],
+      count: 0,
+      selectedAreas: [],
+      areas: []
+    });
   }
 
   componentDidMount = () => {

@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Territory renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="appComponent"
+  >
+    <div
+      className="countryForm"
+    >
+      <table>
+        <thead>
+          <tr>
+            <th>
+              COUNTRY
+            </th>
+            <th>
+              STATE
+            </th>
+            <th>
+              CITY
+            </th>
+            <th>
+              AREAS
+            </th>
+            <th />
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <WithResponsiveMode
+                id="countryDrop"
+                onChanged={[Function]}
+                options={Array []}
+                placeHolder="Select a Country"
+              />
+            </td>
+            <td>
+              <WithResponsiveMode
+                id="stateDrop"
+                onChanged={[Function]}
+                options={Array []}
+                placeHolder="Select a State"
+              />
+            </td>
+            <td>
+              <WithResponsiveMode
+                id="cityDrop"
+                onChanged={[Function]}
+                options={Array []}
+                placeHolder="Select a City"
+              />
+            </td>
+            <td>
+              <WithResponsiveMode
+                multiSelect={true}
+                onChanged={[Function]}
+                options={Array []}
+                placeHolder="Select Areas"
+              />
+            </td>
+            <td>
+              <CustomizedDefaultButton
+                data-automation-id="resetButton"
+                onClick={[Function]}
+                text="Reset"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td
+              colSpan="5"
+              style={
+                Object {
+                  "textAlign": "right",
+                }
+              }
+            >
+              <CustomizedPrimaryButton
+                data-automation-id="addToTableButton"
+                id="addButton"
+                onClick={[Function]}
+                text="Add to Table"
+              />
+              <CustomizedPrimaryButton
+                data-automation-id="clearTableButton"
+                id="clearButton"
+                onClick={[Function]}
+                text="Clear Table"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      className="countryTable"
+    >
+      <table>
+        <thead>
+          <tr>
+            <th>
+              Country
+            </th>
+            <th>
+              State
+            </th>
+            <th>
+              City
+            </th>
+            <th>
+              Areas
+            </th>
+          </tr>
+        </thead>
+        <tbody />
+      </table>
+    </div>
+  </div>,
+  "nodes": Array [
+    <div
+      className="appComponent"
+    >
+      <div
+        className="countryForm"
+      >
+        <table>
+          <thead>
+            <tr>
+              <th>
+                COUNTRY
+              </th>
+              <th>
+                STATE
+              </th>
+              <th>
+                CITY
+              </th>
+              <th>
+                AREAS
+              </th>
+              <th />
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <WithResponsiveMode
+                  id="countryDrop"
+                  onChanged={[Function]}
+                  options={Array []}
+                  placeHolder="Select a Country"
+                />
+              </td>
+              <td>
+                <WithResponsiveMode
+                  id="stateDrop"
+                  onChanged={[Function]}
+                  options={Array []}
+                  placeHolder="Select a State"
+                />
+              </td>
+              <td>
+                <WithResponsiveMode
+                  id="cityDrop"
+                  onChanged={[Function]}
+                  options={Array []}
+                  placeHolder="Select a City"
+                />
+              </td>
+              <td>
+                <WithResponsiveMode
+                  multiSelect={true}
+                  onChanged={[Function]}
+                  options={Array []}
+                  placeHolder="Select Areas"
+                />
+              </td>
+              <td>
+                <CustomizedDefaultButton
+                  data-automation-id="resetButton"
+                  onClick={[Function]}
+                  text="Reset"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td
+                colSpan="5"
+                style={
+                  Object {
+                    "textAlign": "right",
+                  }
+                }
+              >
+                <CustomizedPrimaryButton
+                  data-automation-id="addToTableButton"
+                  id="addButton"
+                  onClick={[Function]}
+                  text="Add to Table"
+                />
+                <CustomizedPrimaryButton
+                  data-automation-id="clearTableButton"
+                  id="clearButton"
+                  onClick={[Function]}
+                  text="Clear Table"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="countryTable"
+      >
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Country
+              </th>
+              <th>
+                State
+              </th>
+              <th>
+                City
+              </th>
+              <th>
+                Areas
+              </th>
+            </tr>
+          </thead>
+          <tbody />
+        </table>
+      </div>
+    </div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <Territory />,
+    "_forcedUpdate": false,
+    "_instance": Territory {
+      "addToTable": [Function],
+      "clearTable": [Function],
+      "componentDidMount": [Function],
+      "context": Object {},
+      "copyArray": [Function],
+      "getAreasOfCity": [Function],
+      "getCitiesOfState": [Function],
+      "getStatesOfCountry": [Function],
+      "onChangeCity": [Function],
+      "onChangeCountry": [Function],
+      "onChangeMultiSelect": [Function],
+      "onChangeState": [Function],
+      "props": Object {},
+      "refs": Object {},
+      "render": [Function],
+      "resetForm": [Function],
+      "state": Object {
+        "cities": Array [],
+        "count": 0,
+        "countries": Array [],
+        "rows": Array [],
+        "selectedAreas": Array [],
+        "selectedCity": "",
+        "selectedCountry": "",
+        "selectedItem": undefined,
+        "selectedState": "",
+        "states": Array [],
+      },
+      "updater": Updater {
+        "_callbacks": Array [],
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <div
+      className="appComponent"
+    >
+      <div
+        className="countryForm"
+      >
+        <table>
+          <thead>
+            <tr>
+              <th>
+                COUNTRY
+              </th>
+              <th>
+                STATE
+              </th>
+              <th>
+                CITY
+              </th>
+              <th>
+                AREAS
+              </th>
+              <th />
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <WithResponsiveMode
+                  id="countryDrop"
+                  onChanged={[Function]}
+                  options={Array []}
+                  placeHolder="Select a Country"
+                />
+              </td>
+              <td>
+                <WithResponsiveMode
+                  id="stateDrop"
+                  onChanged={[Function]}
+                  options={Array []}
+                  placeHolder="Select a State"
+                />
+              </td>
+              <td>
+                <WithResponsiveMode
+                  id="cityDrop"
+                  onChanged={[Function]}
+                  options={Array []}
+                  placeHolder="Select a City"
+                />
+              </td>
+              <td>
+                <WithResponsiveMode
+                  multiSelect={true}
+                  onChanged={[Function]}
+                  options={Array []}
+                  placeHolder="Select Areas"
+                />
+              </td>
+              <td>
+                <CustomizedDefaultButton
+                  data-automation-id="resetButton"
+                  onClick={[Function]}
+                  text="Reset"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td
+                colSpan="5"
+                style={
+                  Object {
+                    "textAlign": "right",
+                  }
+                }
+              >
+                <CustomizedPrimaryButton
+                  data-automation-id="addToTableButton"
+                  id="addButton"
+                  onClick={[Function]}
+                  text="Add to Table"
+                />
+                <CustomizedPrimaryButton
+                  data-automation-id="clearTableButton"
+                  id="clearButton"
+                  onClick={[Function]}
+                  text="Clear Table"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="countryTable"
+      >
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Country
+              </th>
+              <th>
+                State
+              </th>
+              <th>
+                City
+              </th>
+              <th>
+                Areas
+              </th>
+            </tr>
+          </thead>
+          <tbody />
+        </table>
+      </div>
+    </div>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_callbacks": Array [],
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Territory />,
+}
+`;

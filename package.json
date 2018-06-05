@@ -4,8 +4,6 @@
   "private": true,
   "dependencies": {
     "office-ui-fabric-react": "^5.111.2",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
     "webpack": "^3.11.0"
   },
@@ -43,8 +41,9 @@
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
     "raf": "^3.4.0",
+    "react": "^15.6.2",
     "react-addons-test-utils": "^15.6.2",
-    "react-isomorphic-render": "^11.0.54",
+    "react-dom": "^15.6.2",
     "react-test-renderer": "^16.4.0",
     "webpack-dev-middleware": "^3.1.3",
     "webpack-dev-server": "^3.1.4",
